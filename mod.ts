@@ -14,7 +14,7 @@ export function compile(
   code: string,
   options: Partial<CompileOptions> = {},
 ): string {
-  return LiveScript.compile(code, { const: true, bare: true, ...options });
+  return LiveScript.compile(code, { bare: true, ...options });
 }
 
 export default LiveScript;
